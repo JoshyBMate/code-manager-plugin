@@ -1,0 +1,561 @@
+
+.cm-blue{
+    color:#2400ba;
+}
+
+.cm-pink {
+    color:#FF0F82;
+}
+
+.cm-back-white{
+    background_color: #fff !important;
+}
+
+.cm-registration-content{
+	position: relative;
+}
+
+.cm-registration-content-accordion {
+	border: 1px solid #ddd;
+}
+
+.cm-accordion-header {
+	cursor: pointer;
+	padding: 18px;
+	display: block;
+}
+
+.cm-accordion-header {
+	display: grid;
+	grid-template-columns: repeat(4, minmax(0, 1fr));
+	grid-auto-columns: minmax(0, 1fr);
+	grid-auto-flow: column;
+	align-items: center;
+	text-align: center;
+}
+
+.cm-accordion-header.active .accordion-arrow::after {
+	transform: rotate(45deg);
+	-webkit-transform: rotate(45deg);
+}
+
+.cm-accordion-body {
+	transition: max-height 0.5s;
+	overflow: hidden;
+	max-height: 0;
+}
+
+.cm-accordion-body-row {
+	padding: 10px;
+	display: flex;
+}
+
+.cm-accordion-body-row input::placeholder  {
+	color:#2400ba;
+}
+
+.cm-accordion-arrow::after {
+	content: "";
+	display: block;
+	transform: rotate(-45deg);
+	-webkit-transform: rotate(-45deg);
+	border: solid grey;
+	border-width: 0 2px 2px 0;
+	display: inline-block;
+	padding: 3px;
+	right: 7px;
+	position: relative;
+	transition: transform 250ms ease;
+	float:right;
+	
+}
+
+.accordion-body-row .code-value {
+	font-size: 12px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.cm-bulk-email-button {
+	border: 1px solid #fff;
+    padding: 7px 35px;
+    text-transform: uppercase;
+    font-size: 15px;
+    font-family: 'UniSans Bold',Helvetica,Arial,Lucida,sans-serif !important;
+    color: #ffffff;
+    background: transparent;
+    margin: 0px 0px 40px 0px;
+    transition: ease-in-out .2s;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.cm-bulk-email-button:hover {
+	border: 1px solid #FF0F82;
+    text-transform: uppercase;
+    color: #ffffff;
+    background: #FF0F82;
+}
+
+.cm-seats-used {
+	border: 1px solid #2400ba;
+    border-radius: 100px;
+    margin: auto;
+    max-width: 130px;
+    padding: 0;
+}
+
+.cm-training-controls-container {
+	display: flex;
+    justify-content: space-between;
+}
+
+.cm-accordion-item img {
+	max-width:100px;
+}
+
+.cm-training-content-container {
+	padding: 10px 10px 0px 10px;
+    border: 2px solid #fff;
+    border-radius: 16px;
+	backdrop-filter: blur(10px);
+	margin-bottom:20px;
+}
+
+.cm-training-content-accordion {
+	background: #FF0F82;
+    border-radius: 7px;
+    border: 0px;
+    margin-bottom: 10px;
+	transition:.2s;
+}
+
+.cm-training-content-accordion:hover {
+	background: #e90a75;
+    border-radius: 7px;
+    border: 0px;
+    margin-bottom: 10px;
+	transition:.2s;
+}
+
+.cm-training-content-accordion.active {
+	background: #ffffff;
+    border-radius: 7px;
+    border: 0px;
+    margin-bottom: 10px;
+	transition:.2s;
+}
+
+.cm-training-content-accordion.active .cm-accordion-item p {
+	color:#2400ba;
+}
+
+.cm-training-content-accordion .cm-accordion-arrow::after {
+	border: solid #ffffff;
+	border-width: 0px 0px 2px 2px;
+	padding: 4px;
+}
+
+.cm-training-content-accordion.active .cm-accordion-arrow::after {
+	border: solid #2400ba;
+	border-width: 2px 0px 0px 2px;
+	padding: 4px;
+}
+
+.cm-accordion-body-row {
+	padding: 10px;
+    display: flex;
+    border: 1px solid rgba(0,0,0,0.1);
+    margin: 4px;
+    border-radius: 10px;
+}
+
+.cm-accordion-body-row input[type='text'], .cm-accordion-body-row input[type='email']{
+	background:transparent;
+	border-bottom: 1px solid #FF0F82;
+}
+
+.cm-accordion-body-row input:focus {
+	border-bottom: 1px solid #efefef;
+}
+
+.cm-accordion-body-row input:visited {
+	border-bottom: 1px solid #efefef;
+}
+
+.cm-accordion-body-row input[name="fullname"],.cm-accordion-body-row input[name="email"]{
+    border-top: 0;
+	border-left: 0;
+	border-right: 0;
+	margin: 3px;
+}
+
+.cm-accordion-body-row input[name="fullname"] {
+	width: 30%;
+}
+
+.cm-accordion-body-row input[name="email"] {
+	width: 40%;
+}
+
+.cm-accordion-body-row input[name="code"] {
+	width: 20%;
+	border:0 /*!important*/;
+	text-align: center;
+}
+
+.cm-accordion-item.mainTitle {
+	text-align:left;
+	font-weight:bold;
+}
+
+.cm-invite-button {
+	font-family: 'UniSans Bold',Helvetica,Arial,Lucida,sans-serif !important;
+    text-transform: uppercase;
+    background: transparent;
+    border: 2px solid #2400ba;
+    color: #2400ba;
+    padding: 7px 0;
+    width: 140px;
+	cursor:pointer;
+	transition:.4s;
+	font-weight:bold;
+}
+
+.cm-invite-button:hover {
+    background: #FF0F82;
+    border: 2px solid #FF0F82;
+    color: #FFFFFF;
+	cursor:pointer;
+	transition:.2s;
+}
+
+.cm-invite-button:disabled {
+	font-family: 'UniSans Bold',Helvetica,Arial,Lucida,sans-serif !important;
+    text-transform: uppercase;
+    background: rgba(0,0,0,0.1);
+    border: 0px;
+    color: rgba(0,0,0,0.3);
+    padding: 10px 0 6px 0;
+    width: 140px;
+	cursor:not-allowed;
+}
+
+
+
+.cm-button-outline {
+	background: #FF0F82;
+    color: #fff;
+    height: 52px;
+    width: 52px;
+    border: 0px;
+    border-radius: 100px;
+    text-transform: uppercase;
+    font-size: 10px;
+    letter-spacing: 1px;
+    right: 20px;
+    position: absolute;
+    top: 20px;
+	transition:.2s;
+	cursor:pointer;
+}
+
+.cm-button-outline:hover {
+	background: #ffffff;
+    color: #2400ba;
+}
+
+.cm-error-container{
+	position: absolute;
+	padding: 20px;
+	background-color: #fff;
+	border-radius: 10px;
+	border: 1px solid red;
+	top: 0;
+	left: 0;
+	display: none;
+}
+
+
+
+/*---- Bulk Enail Pop-Up ----*/
+
+.cm-close-button{
+	position: absolute;
+	top: 3px;
+	right: 15px;
+}
+
+.cm-email-menu{
+	position: fixed;
+	left: 0;
+	top: 0;
+	width:calc(100% - 280px);
+	height: 100%;
+	transform: translatex(200vw);
+	background-color: #f2f2f2;
+	transition: transform 400ms ease;
+	padding: 220px 70px 70px 70px;
+	z-index: 100;
+	margin-left:280px;
+}
+
+.cm-email-menu.open{
+	transform: translatex(0);
+}
+
+.cm-email-menu.open p{
+	color:#555555 !important;
+}
+
+.email-menu h2 {
+	font-family: 'UniSans Bold',Helvetica,Arial,Lucida,sans-serif !important;
+    color: #2400ba;
+    font-size: 16px;
+}
+
+.cm-email-menu p {
+	font-size: 14px;
+    color: #555555 /*!important*/;
+    font-family: 'UniSans Regular',Helvetica,Arial,Lucida,sans-serif !important;
+    padding-top: 30px;
+    padding-bottom: 10px /*!important*/;
+}
+
+.cm-email-menu input[name="bulkemail"] {
+	font-family: 'UniSans Regular',Helvetica,Arial,Lucida,sans-serif !important;
+	border:0;
+	border-bottom:1px solid #2400ba;
+	padding:5px 3px;
+	font-size:14px;
+	background:transparent;
+	width:70%;
+}
+
+.cm-email-menu select[name="product-select"] {
+	font-family: 'UniSans Regular',Helvetica,Arial,Lucida,sans-serif !important;
+	border: 1px solid #efefef;
+    border-radius: 5px;
+    min-width: 200px;
+	padding: 8px 3px 6px 3px;
+}
+
+.cm-email-menu .cm-button-pink {
+	font-family: 'UniSans Bold',Helvetica,Arial,Lucida,sans-serif !important;
+    text-transform: uppercase;
+    background: #FF0F82;
+    line-height: 12px;
+    text-align: center;
+    font-size: 14px;
+    padding: 8px 25px;
+    color: #fff;
+	cursor:pointer;
+    border: 2px solid #FF0F82;
+    transition: ease-in-out .3s;
+    font-weight:bold;
+}
+
+.cm-email-menu .cm-button-pink:hover {
+    background: #FFFFFF;
+    color: #2400ba;
+    border: 2px solid #2400ba;
+    transition: ease-in-out .3s;
+}
+
+.cm-training-content-container .cm-training-card {
+	display: inline-block;
+	min-height:300px;
+	max-height:300px;
+    background: rgba(255,255,255,1.0);
+    border-radius: 10px;
+    margin-bottom: 10px;
+	margin-right:10px;
+	padding: 10px;
+	transition:.2s;
+	overflow:hidden;
+	cursor:pointer;
+}
+
+.cm-admin_logo {
+    background: url(../../wp-content/uploads/2023/03/logo-2.svg) no-repeat center center;
+    display: inline-block;
+    width: 100%;
+    height: 70px;
+}
+
+.cm-training-content-container .cm-training-card:hover {
+	background: rgba(255,255,255,0.9);
+}
+
+.cm-training-card img {
+	max-width: 180px;
+    width: 100%;
+	background:#efefef;
+	vertical-align: middle;
+}
+
+.cm-training-card .cm-image-card {
+	max-height: 110px;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+.cm-training-card h4 {
+	text-align: center;
+    font-size: 16px;
+    color: #2400ba;
+}
+
+.cm-training-card .cm-training-duration {
+	color:#333333;
+	text-align:center;
+}
+
+.cm-training-card .cm-training-status {
+	padding: 3px;
+    text-align: center;
+    color: #2400ba;
+    border: 1px solid #2400ba;
+    border-radius: 100px;
+    width: 60%;
+    margin: 10px auto 20px;
+	background:#ffffff;
+}
+
+.cm-training-card .cm-training-button {
+	font-family: 'UniSans Bold',Helvetica,Arial,Lucida,sans-serif !important;
+    text-transform: uppercase;
+    text-align: center;
+    width: 90%;
+    display: block;
+    margin: 10px auto 20px;
+    background: #FF0F82;
+    color: #ffffff;
+    border: 2px solid #FF0F82;
+    padding: 3px 0px 0px 0px;
+    transition: .2s;
+}
+
+.cm-training-card:hover .cm-training-button {
+    background: #ffffff;
+    color: #2400ba;
+    border: 2px solid #2400ba;
+}
+
+.cm-achievement-card {
+    display: inline-block;
+    min-height: 160px;
+    max-height: 160px;
+    background: rgba(255,255,255,1.0);
+    border-radius: 10px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    padding: 10px;
+    transition: .2s;
+    overflow: hidden;
+    cursor: pointer;
+	width: 100%;
+	max-width: 140px;
+}
+
+.cm-achievement-card .cm-achievement-image {
+	background: #fff;
+    border-radius: 100px;
+    box-shadow: 0px 0px 0px #efefef;
+	transition:.2s;
+}
+
+.cm-achievement-card:hover .cm-achievement-image {
+	background: #fff;
+    border-radius: 100px;
+    box-shadow: 0px 3px 5px 2px #999;
+    margin-top: -3px;
+    margin-bottom: 18px;
+    transition: .5s;
+}
+
+.cm-achievement-card:hover .cm-achievement-image img {
+	width: 70px;
+    height: 70px;
+    display: block;
+    box-shadow: 0px 0px 12px 5px #fff;
+    border-radius: 100px;
+}
+
+.cm-achievement-card .cm-achievement-image {
+	height: 70px;
+    max-width: 70px;
+	margin: 0 auto 15px;
+}
+
+.cm-achievement-card .cm-achievement-image img {
+	width:70px;
+	height:70px;
+	display:block;
+}
+
+.cm-achievement-card h4 {
+	font-size: 12px;
+    text-align: center;
+    color: #2400ba;
+}
+
+.cm-achievement-card .cm-achievement-button {
+	background: #ff0f82;
+    padding: 3px 5px 1px 5px;
+    width: 100%;
+    display: block;
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+    font-family: 'UniSans Bold',Helvetica,Arial,Lucida,sans-serif !important;
+	border: 2px solid #ff0f82;
+	transition:.2s;
+}
+
+.cm-achievement-card .cm-achievement-button:hover {
+	background: #FFFFFF;
+    color: #2400ba;
+	border: 2px solid #2400ba;
+	transition:.2s;
+}
+
+.cm-pulse {
+  cursor: pointer;
+  box-shadow: 0 0 0 rgba(255,15,130, 0.4);
+  animation: none;
+}
+
+.cm-pulse:hover {
+  animation: pulse 2s infinite;
+}
+
+/*CODE FROM THE OLD SOLUTION*/
+
+
+/*END OF CODE FROM OLD SOLUTION*/
+
+@-webkit-keyframes pulse {
+  0% {
+    -webkit-box-shadow: 0 0 0 0 rgba(255,15,130, 0.4);
+  }
+  70% {
+      -webkit-box-shadow: 0 0 0 10px rgba(255,15,130, 0);
+  }
+  100% {
+      -webkit-box-shadow: 0 0 0 0 rgba(255,15,130, 0);
+  }
+}
+@keyframes pulse {
+  0% {
+    -moz-box-shadow: 0 0 0 0 rgba(255,15,130, 0.4);
+    box-shadow: 0 0 0 0 rgba(255,15,130, 0.4);
+  }
+  70% {
+      -moz-box-shadow: 0 0 0 10px rgba(255,15,130, 0);
+      box-shadow: 0 0 0 10px rgba(255,15,130, 0);
+  }
+  100% {
+      -moz-box-shadow: 0 0 0 0 rgba(255,15,130, 0);
+      box-shadow: 0 0 0 0 rgba(255,15,130, 0);
+  }
+}

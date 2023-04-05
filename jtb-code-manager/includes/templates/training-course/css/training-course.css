@@ -1,0 +1,705 @@
+@font-face {
+  font-family: UniSans;
+  src: url(../../../../fonts/Uni-Sans-Regular.ttf);
+}
+
+@font-face {
+  font-family: UniSansBold;
+  src: url(../../../../fonts/Uni-Sans-Bold.ttf);
+}
+
+.cm-my-accountPanel .cm-leftPanel {
+    flex-basis: unset;
+    flex-shrink: unset;
+    background: #ffffff;
+    min-height: 60px;
+    position: fixed;
+    min-width: 100%;
+    z-index: 99;
+}
+
+.cm-leftPanel .cm-admin_logo {
+    width: 180px;
+    height: 61px;
+    background: url(../../../../../../uploads/2023/03/logo-2.svg) no-repeat center center;
+    background-size: contain;
+    margin: 10px 20px;
+    display: inline-block;
+}
+
+.cm-my-accountPanel .cm-signOut_bt {
+    position: absolute;
+    font-family: 'UniSans Bold', Helvetica, Arial, Lucida, sans-serif;
+    right: 0;
+    background: transparent;
+    width: auto;
+    text-align: center;
+    margin: 15px 20px;
+    padding: 4px 0;
+    color: #2400ba;
+    border: 0px;
+    transition: ease-in-out .3s;
+    font-weight: bold;
+    top: 0;
+    line-height: 30px;
+    display: inline-block;
+    bottom: unset;
+}
+
+.cm-my-accountPanel .cm-signOut_bt:hover {
+    position: absolute;
+    font-family: 'UniSans Bold', Helvetica, Arial, Lucida, sans-serif;
+    right: 0;
+    background: transparent;
+    width: auto;
+    text-align: center;
+    margin: 15px 10px;
+    padding: 4px 0;
+    color: #2400ba;
+    border: 0px;
+    transition: ease-in-out .3s;
+    font-weight: bold;
+    top: 0;
+    line-height: 30px;
+    display: inline-block;
+    bottom: unset;
+}
+
+.cm-rightPanel {
+    flex-basis: unset;
+    background: #fff;
+    background-size: contain;
+    min-height: 100vh;
+    margin: auto;
+    font-family: 'UniSans Regular', Helvetica, Arial, Lucida, sans-serif;
+    width:100%;
+    max-width:1280px;
+}
+
+
+.cm-training-container {
+    max-width: 1280px;
+    width: 100%;
+    padding-left:20px;
+    padding-right:20px;
+    position:relative;
+    z-index:3;
+    margin: 0 auto;
+}
+
+.regPadding {
+    padding-top:185px;
+}
+
+.cm-training-left {
+    width: 30%;
+    display: inline-block;
+    vertical-align: top;
+    padding-bottom:30px;
+}
+
+.cm-training-right {
+    width: 68%;
+    display: inline-block;
+    padding-left: 20px;
+}
+
+.cm-breadcrumb {
+    font-family: 'UniSans', Helvetica, Arial, Lucida, sans-serif;
+    color: #2400ba;
+    padding-bottom:30px;
+}
+
+.cm-rightPanel h1 {
+    font-family: 'UniSansBold', Helvetica, Arial, Lucida, sans-serif;
+    color: #FF0F82;
+    font-size: 39px;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-top: 51px;
+    word-wrap: normal;
+}
+
+.cm-training-right h1 {
+    font-family: 'UniSansBold', Helvetica, Arial, Lucida, sans-serif;
+    color: #FF0F82;
+    font-size: 39px;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-top: 51px;
+    word-wrap: normal;
+}
+
+.cm-video video {
+    width:100%;
+    height:auto;
+}
+
+.cm-desc h2 {
+    font-family: 'UniSansBold';
+    text-transform: uppercase;
+    font-size: 20px;
+    padding: 40px 0;
+    color: #2400ba;
+}
+
+.cm-desc {
+    font-family: 'UniSans';
+    font-size: 14px;
+    padding-bottom:100px;
+}
+
+.cm-desc p {
+    color:#676767 !important;
+}
+
+.cm-training-left p {
+    font-family: 'UniSans';
+    color: #2400ba !important;
+    margin: 40px 0;
+}
+
+.cm-training-left p::before {
+    content:"Approximate Duration: ";
+    font-family: 'UniSans';
+    color: #2400ba;
+}
+
+.cm-beginButton {
+    color: #FFFFFF !important;
+    border-width: 0px;
+    border-radius: 0px;
+    font-size: 16px;
+    font-family: 'UniSans Bold',Helvetica,Arial,Lucida,sans-serif;
+    text-transform: uppercase;
+    background-color: #2400BA;
+    padding: 8px 25px;
+    font-weight: bold;
+    border: 2px solid #2400BA;
+    display: block;
+    max-width: 170px;
+    text-align: center;
+    margin: 5px 0;
+}
+
+.cm-beginButton:hover {
+    color: #FF0F82 !important;
+    border-width: 0px;
+    border-radius: 0px;
+    font-size: 16px;
+    font-family: 'UniSans Bold',Helvetica,Arial,Lucida,sans-serif;
+    text-transform: uppercase;
+    background-color: #ffffff;
+    padding: 8px 25px;
+    font-weight: bold;
+    border: 2px solid #FF0F82;
+    display: block;
+    max-width: 170px;
+    text-align: center;
+}
+
+.cm-submitButton {
+    color: #FFFFFF !important;
+    border-width: 0px;
+    border-radius: 0px;
+    font-size: 16px;
+    font-family: 'UniSans Bold',Helvetica,Arial,Lucida,sans-serif;
+    text-transform: uppercase;
+    background-color: #2400BA;
+    padding: 8px;
+    font-weight: bold;
+    border: 2px solid #2400BA;
+    display: block;
+    max-width: 170px;
+    text-align: center;
+    margin: 5px 0;
+}
+
+.cm-submitButton:hover {
+    color: #FF0F82 !important;
+    border-width: 0px;
+    border-radius: 0px;
+    font-size: 16px;
+    font-family: 'UniSans Bold',Helvetica,Arial,Lucida,sans-serif;
+    text-transform: uppercase;
+    background-color: #ffffff;
+    padding: 8px;
+    font-weight: bold;
+    border: 2px solid #FF0F82;
+    display: block;
+    max-width: 170px;
+    text-align: center;
+}
+
+.buttonDisabled {
+    background-color: #efefef !important;
+    color: #cccccc !important;
+    border: 2px solid #efefef;
+    pointer-events:none;
+    
+}
+
+.buttonDisabled:hover {
+    background-color: #efefef !important;
+    color: #cccccc !important;
+    border: 2px solid #efefef;
+    pointer-events:none;
+}
+
+.cm-exitButton {
+    color: #2400BA !important;
+    border-width: 0px;
+    border-radius: 0px;
+    font-size: 16px;
+    font-family: 'UniSans Bold',Helvetica,Arial,Lucida,sans-serif;
+    text-transform: uppercase;
+    background-color: #ffffff;
+    padding: 8px 25px;
+    font-weight: bold;
+    border: 2px solid #2400BA;
+    display: block;
+    max-width: 170px;
+    text-align: center;
+    margin: 5px 0;
+}
+
+.cm-exitButton:hover {
+    color: #ffffff !important;
+    border-width: 0px;
+    border-radius: 0px;
+    font-size: 16px;
+    font-family: 'UniSans Bold',Helvetica,Arial,Lucida,sans-serif;
+    text-transform: uppercase;
+    background-color: #FF0F82;
+    padding: 8px 25px;
+    font-weight: bold;
+    border: 2px solid #FF0F82;
+    display: block;
+    max-width: 170px;
+    text-align: center;
+}
+
+.cm-leftPanel {
+    height: 0;
+}
+
+.cm-question {
+    font-family: 'UniSans';
+    color: #FF0F82;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.questionNumber {
+    font-family: 'UniSansBold';
+    color: #2400ba !important;
+    margin: 0 0 30px 0;
+    text-transform: uppercase;
+}
+
+.cm-answer-container {
+    width:100%;
+    margin-top:50px;
+    font-family: 'UniSans';
+    transition: opacity 500ms ease;
+}
+
+.cm-answer-container.loading,.loading{
+    opacity: 0;
+    pointer-events: none;
+}
+
+.cm-answer-container .cm-answer-block {
+    width: 23.5%;
+    margin: 0 1% 0 0;
+    display: inline-block;
+    text-align: center;
+    border: 1px solid #cccccc;
+    border-radius: 15px;
+    padding: 30px;
+    cursor:pointer;
+    transition:.3s;
+    vertical-align:top;
+    position:relative;
+    color: #2400BA;
+    background: #f9f9f9;
+    word-wrap:normal;
+}
+
+.cm-training-right .cm-result-title {
+    font-size: 18px;
+    color: #2400BA;
+    padding-top: 0;
+    margin-top: 0;
+    font-family: 'UniSansBold', Helvetica, Arial, Lucida, sans-serif;
+}
+
+.cm-training-right .cm-result-subtitle {
+    font-size: 20px;
+    font-family: 'UniSans', Helvetica, Arial, Lucida, sans-serif;
+    color: #FF0F82;
+    padding: 20px 0;
+}
+
+.cm-training-right .cm-result-direction {
+    font-family: 'UniSans', Helvetica, Arial, Lucida, sans-serif;
+    color: #2400ba !important;
+    font-size: 14px;
+}
+
+.cm-training-right .cm-result-ps {
+    color: #FF0F82 !important;
+    font-family: 'UniSans', Helvetica, Arial, Lucida, sans-serif;
+    font-size: 14px;
+    padding: 20px 0;
+}
+
+.cm-training-right .cm-result-button {
+    background: #2400ba;
+    color: #ffffff !important;
+    padding: 8px 25px;
+    display: inline-block;
+    margin-top: 40px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: 'UniSans', Helvetica, Arial, Lucida, sans-serif;
+    border: 2px solid #2400ba;
+    transition:.2s;
+}
+
+.cm-training-right .cm-result-button:hover {
+    background: #ffffff;
+    color: #FF0F82 !important;
+    padding: 8px 25px;
+    display: inline-block;
+    margin-top: 40px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: 'UniSans', Helvetica, Arial, Lucida, sans-serif;
+    border: 2px solid #FF0F82;
+    transition:.2s;
+}
+
+.cm-answer-container .cm-answer-block.last {
+    margin: 0;
+}
+
+.cm-answer-container .cm-answer-block:hover {
+    width: 23.5%;
+    color:#000;
+    display: inline-block;
+    text-align: center;
+    border: 1px solid #2400BA;
+    border-radius: 15px;
+    padding: 30px;
+    transition:.3s;
+}
+
+.cm-answer-container .cm-answer-block.selected {
+    background: #2400BA;
+    color: #fff;
+    border:1px solid #2400BA;
+}
+
+.cm-answer-container .cm-answer-block.selected::after {
+    content: "SELECTED";
+    display: block;
+    min-height: 10px;
+    font-size: 12px;
+    color: #aaaaaa;
+    position: absolute;
+    z-index: 99999999;
+    bottom: -24px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.cm-page-controls {
+    padding: 50px 0 50px 0;
+}
+
+.cm-page-controls .cm-controlsLeft, .cm-page-controls .cm-controlsRight {
+    display: inline-block;
+    font-family: 'UniSansBold';
+    color: #ccc;
+    width:49%;
+    vertical-align:top;
+}
+
+
+.cm-page-controls .cm-controlsLeft {
+    display: inline-block;
+    font-family: 'UniSansBold';
+    color: #ccc;
+}
+
+.cm-page-controls .cm-controlsRight {
+    display: inline-block;
+}
+
+.cm-page-controls .cm-controlsRight button {
+    font-family: 'UniSansBold';
+    color: #ffffff;
+    background: #FF0F82;
+    text-transform: uppercase;
+    border: 2px solid #ff0f82;
+    padding: 5px 20px 2px 20px;
+    font-size: 16px;
+    float: right;
+    transition:.2s;
+    cursor:pointer;
+}
+
+.cm-page-controls .cm-controlsRight button:hover {
+    color: #ffffff;
+    background: #2400BA;
+    border: 2px solid #2400BA;
+    cursor:pointer;
+    transition:.2s;
+}
+
+.cm-page-controls .cm-controlsLeft .cm-current-question {
+    color: #2400ba;
+}
+
+.cm-training-right iframe {
+    width:100% ;
+    height:550px;
+    margin-top: 51px;
+    margin-bottom:50px;
+    background-color: #2400BA;
+}
+
+.cm-training-right iframe .cm-certificate .cm-certLogo {
+    width: 220px;
+    height: 66px;
+    display: block;
+    margin: 51px auto 30px auto !important;
+}
+
+/*----Training Results----*/
+
+.cm-success-graphic {
+    background: url(../../../../../../../wp-content/uploads/2023/02/mannequin-death.jpg) bottom right no-repeat;
+    height: auto;
+    min-height: 400px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    background-size: contain;
+    z-index: 1;
+}
+
+.cm-fail-graphic {
+    background: url(../../../../../../../wp-content/uploads/2023/02/col-3.png) bottom right no-repeat;
+    height: auto;
+    min-height: 400px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    background-size: contain;
+    z-index: 1;
+}
+
+/*--END--Training Results--END--*/
+
+
+/*----Registration----*/
+
+.cm-training-right .cm-introduction {
+    color: #2400ba;
+    padding: 30px 0px;
+    line-height: 34px;
+}
+
+.cm-plus-graphic {
+    background: url(https://test.openform.online/staging/codeblue/wp-content/uploads/2023/02/lots-of-pluses.png) no-repeat top left;
+    width: 100%;
+    height: 130px;
+    display: block;
+    background-size: contain;
+    margin-top:70px;
+    
+}
+
+.cm-training-left .cm-admin_logo {
+    width: 100%;
+    max-width:280px;
+    height: 110px;
+    background: url(../../../../../../uploads/2023/03/logo-2.svg) no-repeat center center;
+    background-size: contain;
+    margin: 0px;
+    display: block;
+}
+
+.cm-training-right h1 {
+    margin-top:17px;
+}
+
+.cm-training-right .col-50 {
+    display:inline-block;
+    width:49%;
+}
+
+.cm-training-right .col-100 {
+    display:inline-block;
+    width:100%;
+}
+
+.cm-training-right #custom-registration-form {
+    padding:20px 0;
+}
+
+.cm-training-right #custom-registration-form input, .cm-training-right #custom-registration-form select {
+    width: 90%;
+    border: 0;
+    border-bottom: 1px solid #2400ba;
+    background: #fff;
+    margin: 0 0 15px 0;
+    color: #2400ba !important;
+    padding: 10px 3px;
+}
+
+.cm-training-right #custom-login-form input {
+    width: 90%;
+    border: 0;
+    border-bottom: 1px solid #2400ba;
+    background: #fff;
+    margin: 0 0 15px 0;
+    color: #2400ba !important;
+    padding: 10px 3px;
+}
+
+.cm-training-right #custom-registration-form .cm-submit, .cm-training-right #custom-login-form .cm-submit {
+    background: #FF0F82;
+    border: 2px solid #FF0F82;
+    color: #ffffff !important;
+    text-transform: uppercase;
+    padding: 8px 25px;
+    margin: 30px 0;
+    font-weight: bold;
+    font-size: 16px;
+    font-family: 'UniSans', Helvetica, Arial, Lucida, sans-serif;
+    transition:.2s;
+    max-width:220px;
+    cursor:pointer;
+}
+
+.cm-training-right #custom-registration-form .cm-submit:hover, .cm-training-right #custom-login-form .cm-submit:hover {
+    background: #2400ba;
+    border: 2px solid #2400ba;
+    color: #ffffff;
+    transition:.2s;
+    max-width:220px;
+}
+
+
+/*--END--Registration--END--*/
+
+
+      #scaled-frame {
+        width: 100%;
+        height: 500px;
+        border: 0px;
+      }
+      @media screen and (-webkit-min-device-pixel-ratio:0) {
+        #scaled-frame {
+          zoom: 1;
+        }
+      }
+
+@media only screen and (max-width: 1000px) {
+    
+    .cm-rightPanel {
+        padding-top:50px;
+    }
+    
+    .cm-training-right iframe {
+        display:none;
+}
+    
+    .cm-training-left {
+        width: 100%;
+        display: inline-block;
+        vertical-align: top;
+        text-align:center;
+    }
+    
+    .questionNumber, .cm-question, .cm-breadcrumb, .cm-result-title, .cm-result-subtitle, .cm-result-direction, .cm-training-right {
+        text-align: center;
+    }
+    
+    .cm-submitButton, .cm-exitButton, .cm-beginButton {
+        margin: 5px auto;
+    }
+    
+    .cm-page-controls {
+        padding: 20px 0 50px 0;
+    }
+
+    
+    .cm-answer-container .cm-answer-block, .cm-answer-container .cm-answer-block:hover, .cm-answer-container .cm-answer-block.last {
+        width: 100%;
+        margin:0;
+        margin-bottom: 20px;
+    }   
+    
+    .cm-page-controls .cm-controlsRight button {
+        float: none;
+        margin:auto;
+    }
+
+    .cm-training-right {
+        width: 100%;
+        display: inline-block;
+        padding-left: unset;
+    }
+    
+    .cm-page-controls .cm-controlsLeft, .cm-page-controls .cm-controlsRight {
+        width:100%;
+    }
+    
+    .cm-page-controls .cm-controlsLeft {
+        padding:15px 0;
+        text-align: center;
+    }
+    
+    .cm-page-controls .cm-controlsRight {
+        text-align: center;
+    }
+    
+    .cm-plus-graphic {
+        display:none;
+    }
+    
+    .cm-training-right .col-50 {
+        display:inline-block;
+        width:100%;
+    }
+    
+    .cm-training-left .cm-admin_logo {
+        margin:auto;
+    }
+    
+    .cm-success-graphic, .cm-success-graphic {
+        display:none;
+    }
+    
+    .regPadding {
+        padding-top:70px;
+    }
+    
+    .cm-rightPanel h1 {
+        font-size: 29px;
+        word-wrap: normal;
+    }
+
+    .cm-training-right h1 {
+        font-size: 29px;
+        word-wrap: normal;
+    }
+}

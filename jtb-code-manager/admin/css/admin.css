@@ -1,0 +1,19 @@
+#course-questions-container .course-question {
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+#course-questions-container .course-question label {
+    display: block;
+    margin: 5px 0;
+}
+
+#course-questions-container .course-question input {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+#add-course-question {
+    margin-top: 10px;
+}

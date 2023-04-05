@@ -1,0 +1,627 @@
+/*---- Dashboard ----*/
+
+@font-face {
+  font-family: UniSans;
+  src: url(../../fonts/Uni-Sans-Regular.ttf);
+}
+
+@font-face {
+  font-family: UniSansBold;
+  src: url(../../fonts/Uni-Sans-Bold.ttf);
+}
+
+/* Useful Links */
+.cm-my-accountPanel .cm-rightPanel .cm-useful-links a {
+	display: inline-block;
+    max-width: 200px;
+    color: #2400ba;
+    padding: 3px 10px 0px 10px;
+    border: 2px solid #fff;
+    text-align: center;
+    border-radius: 0;
+    margin: 10px 20px 10px 0;
+    background: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: 'UniSansBold';
+    line-height: 24px;
+    transition:2s;
+}
+
+.cm-my-accountPanel .cm-rightPanel .cm-useful-links a:hover {
+	border: 2px solid #FF0F82;
+	background: #FF0F82;
+	transition:.2s;
+}
+
+/* Paragraph title */
+.cm-my-accountPanel .cm-paragraph-title {
+	padding-top: 30px;
+}
+
+/* Orders table */
+.woocommerce-MyAccount-content .woocommerce-orders-table {
+	font-family: 'UniSans', Helvetica, Arial, Lucida, sans-serif;
+	background: #fff;
+	padding: 20px;
+	border-radius: 20px;
+	font-size: 14px;
+}
+
+.cm-rightPanel .woocommerce-MyAccount-content p {
+    color:#ffffff;
+}
+
+.cm-rightPanel .woocommerce-MyAccount-content .woocommerce-PaymentBox p {
+    color:#2400BA;
+}
+
+
+
+.woocommerce-orders-table .woocommerce-orders-table__cell {
+	color: #333333;
+}
+
+.cm-rightPanel .woocommerce-orders-table__cell a.woocommerce-button {
+	padding: 3px 35px !important;
+    font-family: 'UniSansBold', Helvetica, Arial, Lucida, sans-serif;
+    text-transform: uppercase;
+    border-radius: 0;
+    border: 2px solid #2400ba;
+    color: #2400ba;
+    transition: .2s;
+    margin: 0;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.cm-rightPanel .woocommerce-orders-table__cell a.woocommerce-button:hover {
+	background: #FF0F82;
+	border: 2px solid #FF0F82;
+	color: #FFFFFF;
+}
+
+/* Hide button after */
+.woocommerce a.button:after,
+.woocommerce button.button:after {
+	display: none;
+}
+
+/* Address title */
+.woocommerce-Address .woocommerce-Address-title h3 {
+	color: #ffffff;
+}
+
+/* Edit Account form input */
+.cm-rightPanel .woocommerce-EditAccountForm input {
+	padding: 7px 5px;
+	border-radius: 5px;
+	color: #333;
+}
+
+.cm-rightPanel .woocommerce-MyAccount-content h3 {
+    font-size: 26px;
+    color: #FF0F82;
+    font-family: 'UniSansBold', Helvetica, Arial, Lucida, sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.cm-rightPanel .woocommerce-EditAccountForm.edit-account input, .cm-rightPanel .woocommerce-address-fields__field-wrapper input{
+    padding:5px !important;
+    background:#ffffff;
+    background-color:#ffffff !important;
+}
+
+.cm-rightPanel .woocommerce-EditAccountForm.edit-account label, .cm-rightPanel .woocommerce-address-fields__field-wrapper label {
+    font-family: 'UniSansBold', Helvetica, Arial, Lucida, sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: 2px;
+    color:#ffffff !important;
+    
+}
+
+.cm-rightPanel form .button.wp-element-button {
+    font-family: 'UniSansBold', Helvetica, Arial, Lucida, sans-serif;
+    background: #FF0F82;
+    text-align: center;
+    margin: 15px 0;
+    padding: 4px 35px;
+    color: #fff;
+    border: 2px solid #FF0F82;
+    transition: ease-in-out .3s;
+    border-radius: 0;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.cm-rightPanel form .button.wp-element-button:hover {
+    background: #2400ba;
+    text-align: center;
+    margin: 15px 0;
+    padding: 4px 35px;
+    color: #fff;
+    border: 2px solid #ffffff;
+    transition: ease-in-out .3s;
+    border-radius: 0;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.cm-rightPanel .woocommerce-EditAccountForm.edit-account legend {
+    font-family: 'UniSans Bold', Helvetica, Arial, Lucida, sans-serif;
+    font-weight: bold;
+    text-transform: capitalize;
+    font-size: 14px;
+    letter-spacing: 0px;
+    color:#ffffff;
+}
+
+/* WP Element button */
+.cm-rightPanel .wp-element-button {
+	text-transform: uppercase;
+	font-family: 'UniSansBold', Helvetica, Arial, Lucida, sans-serif;
+	margin: 30px 0;
+	background: #FF0F82;
+	border-radius: 0;
+	border: 2px solid #FF0F82;
+	color: #fff;
+	padding: 2px 20px 0 20px;
+	transition: .2s;
+}
+
+.cm-rightPanel .wp-element-button:hover {
+	background: transparent;
+	border: 2px solid #ffffff;
+	color: #fff;
+}
+
+/* Account Section */
+#my_account_sec .et_pb_text_inner p {
+	padding-bottom: 0;
+}
+
+.cm-rightPanel .woocommerce-MyAccount-content a.woocommerce-Button, .cm-rightPanel .woocommerce-MyAccount-content a.button {
+    color: #FFFFFF;
+    border-width: 0px;
+    border-radius: 0px;
+    font-size: 16px;
+    font-family: 'UniSansBold',Helvetica,Arial,Lucida,sans-serif;
+    text-transform: uppercase;
+    background-color: #2400BA;
+    padding:5px 25px;
+    font-weight: bold;
+}
+
+.cm-rightPanel .woocommerce-MyAccount-content a.woocommerce-Button:hover, .cm-rightPanel .woocommerce-MyAccount-content a.button:hover {
+    color: #FFFFFF;
+    border-width: 0px;
+    border-radius: 0px;
+    font-size: 16px;
+    background-color: #FF0F82;
+    padding:5px 25px;
+}
+
+.cm-rightPanel .woocommerce-PaymentBox {
+    color:#2400BA;
+}
+
+.cm-rightPanel .woocommerce-MyAccount-content address {
+    color:#ffffff;
+}
+.cm-rightPanel #add_payment_method .form-row .woocommerce-Button {
+    color: #FFFFFF;
+    border-width: 0px;
+    border-radius: 0px;
+    font-size: 16px;
+    font-family: 'UniSansBold',Helvetica,Arial,Lucida,sans-serif;
+    text-transform: uppercase;
+    background-color: #2400BA;
+    padding:5px 35px;
+    font-weight: bold;
+}
+
+.cm-rightPanel #add_payment_method .form-row .woocommerce-Button:hover {
+    color: #FFFFFF;
+    background-color: #FF0F82;
+}
+
+
+/* My Account Panel */
+.cm-my-accountPanel {
+	display: flex;
+	min-height: 100vh;
+}
+
+/* My Account Navigation and Content */
+.woocommerce-account .cm-my-accountPanel .woocommerce-MyAccount-navigation,
+.woocommerce-account .cm-my-accountPanel .woocommerce-MyAccount-content {
+	float: none;
+	width: auto;
+}
+
+/* My Account Navigation */
+.woocommerce-MyAccount-navigation {
+	margin: auto;
+	max-width: 85%;
+}
+
+/* Left Panel */
+.cm-leftPanel {
+	flex-basis: 280px;
+	flex-shrink: 0;
+	background: #ffffff;
+	position: fixed;
+	min-width: 280px;
+}
+
+/* My Account Navigation List */
+.cm-leftPanel .woocommerce-MyAccount-navigation ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.cm-leftPanel .woocommerce-MyAccount-navigation ul li a {
+    text-transform: uppercase;
+    font-family: 'UniSansBold', Helvetica, Arial, Lucida, sans-serif;
+    font-weight: bold;
+    color: #2400ba;
+    font-size: 16px;
+    padding: 6px 23px;
+    display: block;
+    line-height: 19px;
+}
+
+.cm-leftPanel .woocommerce-MyAccount-navigation ul .is-active a {
+    color: #FF0F82;
+}
+
+/* Admin Logo */
+.cm-leftPanel .cm-admin_logo {
+    width: 200px;
+    height: 60px;
+    background: url(../../../../uploads/2023/03/logo-2.svg) no-repeat center center;
+    background-size: contain;
+    margin: 60px auto;
+}
+
+/* Right Panel */
+.cm-rightPanel {
+    flex-basis: calc(100% - 280px);
+    background: url(../../../../uploads/2023/03/bg_cpr.jpg) no-repeat top center #2400ba;
+    background-size: contain;
+    padding: 0 50px 50px 50px;
+    min-height: 100vh;
+    margin-left: 280px;
+    padding-top: 185px;
+    font-family: 'UniSans', Helvetica, Arial, Lucida, sans-serif;
+}
+
+/* Right Panel Heading */
+.cm-rightPanel h1 {
+    font-family: 'UniSansBold', Helvetica, Arial, Lucida, sans-serif;
+    color: #FF0F82;
+    font-size: 30px;
+    text-transform: uppercase;
+    font-weight: bold;
+    word-wrap: normal;
+}
+
+
+/* Right Panel Link */
+.cm-my-accountPanel .cm-rightPanel a {
+    color: #FF0F82;
+    cursor: pointer;
+}
+
+/* Welcome Container */
+.cm-welcome-container {
+    color: #fff;
+}
+
+/* Sign Out Button */
+.cm-my-accountPanel .cm-signOut_bt {
+    position: absolute;
+    font-family: 'UniSansBold', Helvetica, Arial, Lucida, sans-serif;
+    bottom: 30px;
+    background: #FF0F82;
+    width: 190px;
+    text-align: center;
+    margin: 15px 45px;
+    padding: 5px 0 1px 0;
+    color: #fff;
+    border: 2px solid #FF0F82;
+    transition: ease-in-out .3s;
+    font-weight:bold;
+}
+
+.cm-my-accountPanel .cm-signOut_bt:hover {
+    background: #FFFFFF;
+    color: #2400ba;
+    border: 2px solid #2400ba;
+}
+
+.cm-leftPanel {
+    height:100vh;
+}
+
+.cm-leftPanel .side-menu {
+    display:none;
+}
+
+.woocommerce-MyAccount-navigation-link--customer-logout {
+    display:none;
+}
+
+.woocommerce-MyAccount-content h2 {
+    text-transform: uppercase;
+    padding: 20px 0 5px 0;
+    color: #FF0F82;
+    font-family: 'UniSansBold';
+}
+
+.woocommerce table.shop_table {
+    border: 2px solid #fff !important;
+    border-radius: 20px !important;
+    padding: 10px;
+}
+
+.shop_table.order_details th {
+    color:#ffffff;
+    text-transform:uppercase;
+}
+
+.woocommerce-table {
+    color:#ffffff;
+}
+
+.woocommerce .woocommerce-customer-details address {
+    border: 2px solid #fff !important;
+    border-radius: 20px !important;
+    padding: 20px !important;
+}
+
+mark {
+    background-color: #1d0195;
+    color: #a2a2ff;
+}
+
+.woocommerce table.shop_table td, .woocommerce table.shop_table tfoot th {
+    border-top: 1px solid rgba(255,255,255,.3) !important;
+}
+
+.woocommerce-Message.woocommerce-Message--info {
+    border-radius: 20px;
+}
+
+
+.woocommerce .woocommerce-error, .woocommerce .woocommerce-info, .woocommerce .woocommerce-message {
+    background: transparent !important;
+    border: 2px solid #FF0F82;
+    border-radius: 20px;
+    font-size: 14px !important;
+}
+
+.woocommerce-MyAccount-content .woocommerce-Message.woocommerce-Message--info{
+    background: transparent !important;
+    color: #ffffff !important;
+}
+
+.cm-filter-container .cm-view-by, .cm-filter-container .cm-filter-item {
+    display:inline-block;
+}
+
+.cm-filter-container .cm-view-by {
+    font-size: 12px;
+    color: rgba(255,255,255,0.5);
+    margin-right: 10px;
+}
+
+.cm-filter-container .cm-filter-item {
+    font-size: 12px;
+    font-size: 15px;
+    margin-right: 10px;
+    color:#ffffff;
+}
+
+.cm-filter-container .cm-filter-item.selected {
+    font-size: 12px;
+    font-size: 15px;
+    margin-right: 10px;
+    color:#FF0F82;
+    font-weight:bold;
+    
+}
+
+@media only screen and (max-width: 1000px) {
+    
+.cm-leftPanel {
+    flex-basis: unset;
+    flex-shrink: unset;
+    background: #ffffff;
+    height: auto;
+    position: fixed;
+    min-width: 100%;
+    overflow: hidden;
+    padding: 0 10px;
+    z-index:99;
+}
+
+.cm-leftPanel .woocommerce-MyAccount-navigation ul {
+    list-style-type: none;
+    padding-top: 30px;
+}
+
+.cm-leftPanel .cm-admin_logo {
+    width: 120px;
+    height: 60px;
+    background-size: contain;
+    margin: 0;
+    display: inline-block;
+}
+    
+    .cm-my-accountPanel .cm-signOut_bt {
+        display:none;
+    }
+    
+    .cm-my-accountPanel {
+        display: unset !important;
+    }
+    
+
+.cm-accordion-body-row {
+    padding: 10px;
+    display: block !important;
+    border: 1px solid rgba(0,0,0,0.1);
+    margin: 4px;
+    border-radius: 10px;
+}
+
+.cm-invite-button {
+    margin: auto;
+    display: block;
+}
+
+.cm-email-menu {
+    width: 100% !important;
+    margin-left: 0 !important;
+}
+
+.cm-accordion-body-row input[name="fullname"], .cm-accordion-body-row input[name="email"], .cm-accordion-body-row input[name="code"] {
+    width: 100% !important;
+}
+
+.cm-accordion-header {
+    display: inline-block !important;
+    width:100% !important;
+}
+
+.cm-accordion-item.mainTitle {
+    text-align: center !important;
+}
+    
+    /*----Mobile Menu----*/
+    
+    
+    .woocommerce-MyAccount-navigation {
+        background: #fff;
+    width: 100%;
+    max-width: unset;
+    }
+    
+    /* Nav menu */
+.nav{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    overflow: hidden;
+
+}
+
+.nav ul {
+    padding-top:30px;
+}
+
+/* My Account Navigation and Content */
+.woocommerce-account .cm-my-accountPanel .woocommerce-MyAccount-navigation,
+.woocommerce-account .cm-my-accountPanel .woocommerce-MyAccount-content {
+	float: none;
+	width: 100%;
+}
+
+.menu a{
+    display: block;
+    padding: 30px;
+    color: var(--white);
+}
+.menu a:hover{
+    background-color: var(--gray);
+}
+.nav{
+    max-height: 0;
+    transition: max-height .5s ease-out;
+}
+
+/* Menu Icon */
+.hamb{
+    cursor: pointer;
+    float: right;
+    padding: 40px 20px;
+}/* Style label tag */
+
+.hamb-line {
+    background: #2400ba;
+    display: block;
+    height: 2px;
+    position: relative;
+    width: 24px;
+
+} /* Style span tag */
+
+.hamb-line::before,
+.hamb-line::after{
+    background: #2400ba;
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    transition: all .2s ease-out;
+    width: 100%;
+}
+.hamb-line::before{
+    top: 5px;
+}
+.hamb-line::after{
+    top: -5px;
+}
+
+.side-menu {
+    display: none;
+} /* Hide checkbox */
+
+/* Toggle menu icon */
+.side-menu:checked ~ nav{
+    max-height: 100%;
+}
+.side-menu:checked ~ .hamb .hamb-line {
+    background: transparent;
+}
+.side-menu:checked ~ .hamb .hamb-line::before {
+    transform: rotate(-45deg);
+    top:0;
+    background: #FF0F82;
+}
+.side-menu:checked ~ .hamb .hamb-line::after {
+    transform: rotate(45deg);
+    top:0;
+    background: #FF0F82;
+}
+
+
+/*----Right Panel Styles----*/
+
+.cm-rightPanel {
+    flex-basis: unset;
+    background-size: contain;
+    padding: 0 30px;
+    min-height: 100vh;
+    margin-left: unset;
+    padding-top: 120px;
+    font-family: 'UniSans', Helvetica, Arial, Lucida, sans-serif;
+}
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
